@@ -1,0 +1,231 @@
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.Background
+{
+    width: auto;
+    height: 600px;
+    background-color: transparent;
+    background-image: url(resources/portada3.jpg);
+}
+
+.Image
+{
+    margin-left: 10%;
+    width: 400px;
+    padding-top: 100px;
+}
+
+.Image-padding
+{
+    width: auto;
+    height: 100px;
+    background-color: transparent;
+}
+
+.Image-block
+{
+    margin-top: -100px;
+    width: auto;
+}
+
+.Circles-user
+{
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+}
+
+.Circles
+{
+    margin: 0 auto;
+    margin-left: 10%;
+    width: 60%;
+    display: flex;
+}
+
+.circle-block
+{
+    width: 50%;
+    margin: 0;
+}
+
+.circle-small
+{
+    background: rgb(206, 206, 201);
+    border-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 190px;
+}
+
+.circle {
+    display: flex;
+    background: rgb(206, 206, 201);
+    border-color: black;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.circle-small2
+{
+    background: rgb(246, 246, 150);
+    border-color: orangered;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 190px;
+}
+
+.circle2 {
+    display: flex;
+    background: rgb(246, 246, 150);
+    border-color: orangered;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.circle p{
+    font: bold 200% "Trebuchet MS", sans-serif;
+    margin: auto;
+}
+
+.circle2 p{
+    font: bold 200% "Trebuchet MS", sans-serif;
+    margin: auto;
+}
+
+.user-block
+{
+    margin: 0 auto;
+    margin-left: 10%;
+    width: 30%;
+}
+
+.user-register p
+{
+    margin-top: 3%;
+    color: white;
+    text-decoration: underline;
+}
+
+.user-block-image
+{
+
+    display: flex;
+}
+
+.user-image
+{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    background-image: url(resources/user.png);
+}
+
+.user-image p
+{
+    margin-left: 120px;
+    margin-top: 30px;
+    font: bold 200% "Trebuchet MS", sans-serif;
+}
+
+.button-login
+{
+    margin-top: 5%;
+    font: bold 200% "Trebuchet MS", sans-serif;
+    border-radius: 2%;
+    background-color: orangered;
+    border-color: orangered;
+    height: 50px;
+    width: 250px;
+}
+
+.search-block
+{
+    
+    margin-top: 1%;
+    margin-left: 10%;
+    
+    display: flex;
+}
+.search
+{
+    width: 40%;
+    height: 40px;
+}
+
+.button-send
+{
+    background-color: orangered;
+    border-color: orangered;
+    border-radius: 10%;
+    height: 40px;
+}
+
+.hlabel
+{
+    margin-left: 10%;
+    margin-top: 5%;
+    font: bold 200% "Trebuchet MS", sans-serif;
+}
+
+.bottom-block
+{
+    background-color: black;
+    margin-top: 5%;
+}
+
+.margin
+{
+    height: 30px;
+}
+
+.flex-bottom
+{
+    display: flex;
+}
+
+.mobile-block
+{
+    margin-left: 10%;
+}
+
+.mobile-block h1
+{
+    color: white;
+    font: bold 100% "Trebuchet MS", sans-serif;
+    margin-bottom: 5%;
+}
+
+.info-block
+{
+    color: white;
+    margin-left: 5%;
+}
+
+.info-block h1
+{
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+.info-block h2
+{
+    font-size: 16px;
+}

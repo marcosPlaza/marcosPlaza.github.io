@@ -23,7 +23,7 @@
     crossorigin="anonymous"></script>
 
 <head>
-    <link href="styles_main.css" rel="stylesheet" type="text/css" />
+    <link href="styles_pedidos.css" rel="stylesheet" type="text/css" />
     <title>Pide tu comida favorita online | gourmet-race.com</title>
     <meta name="description" content="Hambriento? Busca tus restaurantes favoritos">
     <meta name="keywords" content="restaurantes,restaurants,restaurant,comida,food,hambre,precios,barato">
@@ -44,27 +44,28 @@
             <div class="Circles">
 
                 <div class="circle-block">
-                    <div class="circle-small2"></div>
+                    <div class="circle-small"></div>
 
-                    <a href="pedidos.html" style="text-decoration:none">
-                        <button class="circle2" name="btn_pedidos"
-                            onmouseover="this.style.background='rgb(255, 255, 235)'"
-                            onmouseout="this.style.background='rgb(246, 246, 150)'" type="submit">
-                            <p>Pedidos</p>
-                        </button>
-                    </a>
+                    <button class="circle" name="btn_pedidos" onmouseover="this.style.background='rgb(224, 224, 224)'"
+                        onmouseout="this.style.background='rgb(206, 206, 201)'" type="submit">
+                        <p>Seguimiento de pedidos</p>
+                    </button>
+
+                    <div class="circle-extrasmall"></div>
 
                 </div>
 
                 <div class="circle-block">
-                    <div class="circle-small"></div>
+                    <div class="circle-small2"></div>
 
-                    <button class="circle" name="btn_reservas" onmouseover="this.style.background='rgb(224, 224, 224)'"
+                    <button class="circle2" name="btn_reservas" onmouseover="this.style.background='rgb(224, 224, 224)'"
                         onmouseout="this.style.background='rgb(206, 206, 201)'" type="submit">
-                        <p>Reservas</p>
+                        <p>¿Lo de siempre?</p>
                     </button>
 
                 </div>
+
+
 
             </div>
 
@@ -85,12 +86,20 @@
                     <p type="submit">¿Aún no tienes cuenta? Regístrate aquí</p>
                 </div>
 
+                <div class="circle-block">
+                    <div class="circle-small3"></div>
+
+                    <button class="circle3" name="btn_reservas" onmouseover="this.style.background='rgb(255, 255, 235)'"
+                        onmouseout="this.style.background='rgb(246, 246, 150)'" type="submit">
+                        <p>Pedir</p>
+                    </button>
+
+                </div>
+
             </div>
         </div>
 
         <div class="form-group">
-
-            <div class="margin"></div>
 
             <label class="hlabel" for="restaurant">Busca restaurantes cerca de ti</label>
 
