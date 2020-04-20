@@ -88,6 +88,13 @@
     margin-left: 190px;
 }
 
+.btn-a {
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 .circle2 {
     display: flex;
     background: rgb(246, 246, 150);

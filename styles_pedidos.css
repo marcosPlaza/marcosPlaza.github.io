@@ -38,6 +38,13 @@
     width: auto;
 }
 
+.btn-a {
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 .Circles-user
 {
     margin: 0 auto;

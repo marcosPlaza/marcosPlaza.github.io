@@ -1,0 +1,173 @@
+.Flex {
+    display: flex;
+    margin-top: 20px;
+}
+
+.notFlex {
+    display: block;
+}
+
+.delete-margin {
+    margin-top: -20px;
+}
+
+.Image {
+    margin-left: 2%;
+    width: 400px;
+    margin-top: -65px;
+    margin-right: 45%;
+}
+
+.Image-padding {
+    width: auto;
+    height: 100px;
+    background-color: transparent;
+}
+
+.Image-block {
+    width: auto;
+}
+
+.Search-box {
+    margin-top: -5px;
+}
+
+.Cuenta {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    background-image: url(resources/user_small.png);
+}
+
+.text {
+    font: bold 100% "Trebuchet MS", sans-serif;
+}
+
+.title {
+    font: bold 200% "Trebuchet MS", sans-serif;
+}
+
+.space {
+    margin-right: 30px;
+}
+
+.restaurant_block {
+    margin-top: 50px;
+    margin-left: 3%;
+}
+
+.img_rest {
+    height: 200px;
+    width: 300px;
+    border-radius: 5%;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: grey;
+}
+
+.discount-circle {
+    background-color: rgb(255, 118, 118);
+    border-color: red;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 270px;
+    margin-top: -220px;
+    margin-bottom: 180px;
+    text-align: center;
+}
+
+.discount-circle p {
+    font: bold 100% "Trebuchet MS", sans-serif;
+    line-height: 70px;
+}
+
+.score {
+    display: block;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+.score-wrap {
+    display: inline-block;
+    position: relative;
+    height: 23px;
+}
+
+.score .stars-active {
+    color: #EEBD01;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.score .stars-inactive {
+    color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: initial;
+    /* overflow: hidden; */
+}
+
+.valoration {
+    background-color: black;
+    border-color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    margin-left: 120px;
+    margin-top: -20px;
+}
+
+.valoration p {
+    color: white;
+    font: bold 60% "Trebuchet MS", sans-serif;
+    line-height: 40px;
+}
+
+.restaurant-name {
+    font: bold 100% "Trebuchet MS", sans-serif;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
+
+.circle {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.bottom-block {
+    background-color: black;
+}
+
+.mobile-block
+{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.mobile-block h1
+{
+    color: white;
+    font: bold 100% "Trebuchet MS", sans-serif;
+    margin-bottom: 5%;
+}
+
