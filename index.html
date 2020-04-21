@@ -23,7 +23,7 @@
     crossorigin="anonymous"></script>
 
 <head>
-    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="styles_main.css" rel="stylesheet" type="text/css" />
     <title>Pide tu comida favorita online | gourmet-race.com</title>
     <meta name="description" content="Hambriento? Busca tus restaurantes favoritos">
     <meta name="keywords" content="restaurantes,restaurants,restaurant,comida,food,hambre,precios,barato">
@@ -44,18 +44,23 @@
             <div class="Circles">
 
                 <div class="circle-block">
-                    <div class="circle-small"></div>
+                    <div class="circle-small2"></div>
 
-                    <button class="circle" name="btn_pedidos" type="submit">
-                        <p>Pedidos</p>
-                    </button>
+                    <a class="btn-a" href="pedidos.html" style="text-decoration:none">
+                        <button class="circle2" name="btn_pedidos"
+                            onmouseover="this.style.background='rgb(255, 255, 235)'"
+                            onmouseout="this.style.background='rgb(246, 246, 150)'">
+                            <p>Pedidos</p>
+                        </button>
+                    </a>
 
                 </div>
 
                 <div class="circle-block">
                     <div class="circle-small"></div>
 
-                    <button class="circle" name="btn_reservas" type="submit">
+                    <button class="circle" style="cursor: not-allowed;" name="btn_reservas" onmouseover="this.style.background='rgb(224, 224, 224)'"
+                        onmouseout="this.style.background='rgb(206, 206, 201)'">
                         <p>Reservas</p>
                     </button>
 
@@ -85,7 +90,9 @@
 
         <div class="form-group">
 
-            <label class="hlabel" for="restaurant">Busca en restaurantes cerca de ti</label>
+            <div class="margin"></div>
+
+            <label class="hlabel" for="restaurant">Busca restaurantes cerca de ti</label>
 
             <div class="search-block">
 
@@ -136,7 +143,7 @@
             </div>
 
             <div class="margin"></div>
-            
+
         </div>
 
     </div>
