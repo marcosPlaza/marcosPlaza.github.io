@@ -1,10 +1,12 @@
 .Flex {
     display: flex;
     margin-top: 20px;
+    background-color: transparent;
 }
 
 .notFlex {
     display: block;
+    background-color: transparent;
 }
 
 .delete-margin {
@@ -16,6 +18,23 @@
     width: 400px;
     margin-top: -65px;
     margin-right: 45%;
+    background-color: black;
+}
+
+.Image-restaurant {
+    height: 200px;
+    width: 300px;
+    border-radius: 5%;
+    background-color: transparent;
+}
+
+.img_rest {
+    height: 200px;
+    width: 300px;
+    border-radius: 5%;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: green;
 }
 
 .Image-padding {
@@ -45,6 +64,7 @@
 }
 
 .title {
+    margin-left: 3%;
     font: bold 200% "Trebuchet MS", sans-serif;
 }
 
@@ -54,17 +74,10 @@
 
 .restaurant_block {
     margin-top: 50px;
-    margin-left: 3%;
+    background-color: transparent;
 }
 
-.img_rest {
-    height: 200px;
-    width: 300px;
-    border-radius: 5%;
-    margin-top: 30px;
-    margin-left: 50px;
-    background-color: grey;
-}
+
 
 .discount-circle {
     background-color: rgb(255, 118, 118);
@@ -170,4 +183,3 @@
     font: bold 100% "Trebuchet MS", sans-serif;
     margin-bottom: 5%;
 }
-
