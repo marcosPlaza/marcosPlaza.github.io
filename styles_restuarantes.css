@@ -4,7 +4,7 @@
     width: auto;
 }
 
-.contender{
+.contender {
     width: 1200px;
     position: relative;
 }
@@ -210,6 +210,18 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
+}
+
+.circle-p{
+    font: bold 100% "Trebuchet MS", sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.circle img{
+    border: 50%;
 }
 
 .bottom-block {
