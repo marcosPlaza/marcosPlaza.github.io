@@ -1,9 +1,17 @@
 .bxslider {
     display: flex;
+    position: relative;
+    width: auto;
 }
+
+.contender{
+    width: 1200px;
+    position: relative;
+}
+
 .Flex {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: transparent;
 }
 
@@ -14,6 +22,27 @@
 
 .delete-margin {
     margin-top: -20px;
+}
+
+.arrow {
+    margin-top: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    margin-left: 850px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
 
 .Image {
@@ -67,6 +96,16 @@
     font: bold 100% "Trebuchet MS", sans-serif;
 }
 
+.input-text {
+    height: 40px;
+    width: 150px;
+    font: 100% "Trebuchet MS", sans-serif;
+    border: 1px orange;
+    background: linear-gradient(to right, black, black) 2px calc(100% - 5px)/calc(100% - 10px) 2px no-repeat;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
 .title {
     margin-left: 3%;
     font: bold 200% "Trebuchet MS", sans-serif;
@@ -83,20 +122,23 @@
 
 .discount-circle {
     position: absolute;
-    background-color: rgb(255, 118, 118);
-    border-color: red;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    background-color: rgb(231, 171, 7);
+    border-color: orange;
+    border-radius: 5%;
+    min-width: 80px;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-left: 270px;
-    margin-top: -220px;
+    margin-top: -200px;
     text-align: center;
+    direction: rtl;
     z-index: 10;
 }
 
 .discount-circle p {
     font: bold 100% "Trebuchet MS", sans-serif;
-    line-height: 70px;
+    line-height: 40px;
 }
 
 .score {
