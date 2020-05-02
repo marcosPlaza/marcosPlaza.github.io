@@ -1,3 +1,11 @@
+body {
+  background-image: url(resources/back1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%
+}
+
+
 .container-fluid.custom-container {
     padding-top: 100px;
     padding-left: 100px;
@@ -71,10 +79,6 @@
 .margin
 {
     height: 30px;
-}
-
-.margin2 {
-    /**/
 }
 
 .flex-bottom

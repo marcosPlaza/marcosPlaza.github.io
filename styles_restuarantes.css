@@ -1,3 +1,9 @@
+body {
+  background-image: url(resources/back2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%
+}
 .bxslider {
     display: flex;
     position: relative;
@@ -451,6 +457,8 @@
   .container input:checked ~ .checkmark {
     background-color: orangered;
   }
+
+
   
   /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
@@ -476,3 +484,143 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+.container-fluid.custom-container {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.navbar-brand
+{
+  font-family: 'Lato', sans-serif;
+  color:grey;
+  font-size: 16px;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.Image
+{
+    margin-left: 10%;
+    width: 400px;
+    padding-top: 100px;
+}
+
+.Image-padding
+{
+    width: auto;
+    height: 100px;
+    background-color: transparent;
+}
+
+.Image-block
+{
+    margin-top: -60px;
+    margin-left: -35px; 
+    width: auto;
+}
+
+.hlabel
+{
+    margin-left: 10%;
+    margin-top: 5%;
+    font: bold 200% "Trebuchet MS", sans-serif;
+}
+
+.bottom-block
+{
+    margin-top: 5%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.margin
+{
+    height: 30px;
+}
+
+.flex-bottom
+{
+    display: flex;
+}
+
+.mobile-block
+{
+    margin-left: 10%;
+}
+
+.mobile-block h1
+{
+    color: white;
+    font: bold 100% "Trebuchet MS", sans-serif;
+    margin-bottom: 5%;
+}
+
+.info-block
+{
+    color: white;
+    margin-left: 5%;
+}
+
+.info-block h1
+{
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+.info-block h2
+{
+    font-size: 16px;
+}
+
+.animate
+{
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+    width: 230px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    margin: 10px 20px 20px 10px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Verdana';
+    font-size: 25px;
+    color: #FFF;
+}
+
+.red
+{
+    background-color: #E74C3C;
+    border-bottom: 5px solid #BD3E31;
+}
+
+.gray {
+    background-color: #808080;
+    border-bottom: 5px solid #606060;
+}
+
+.action-button:active
+{
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
