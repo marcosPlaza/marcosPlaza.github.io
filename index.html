@@ -24,130 +24,99 @@
 
 <head>
     <link href="styles_main.css" rel="stylesheet" type="text/css" />
-    <title>Pide tu comida favorita online | gourmet-race.com</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/core.css">
+    <title>Pide tu comida favorita online | Gourmet Race</title>
     <meta name="description" content="Hambriento? Busca tus restaurantes favoritos">
     <meta name="keywords" content="restaurantes,restaurants,restaurant,comida,food,hambre,precios,barato">
 </head>
 
 <body>
-
+    <!-- Background -->
     <div class="Background">
 
-        <div class="Image">
-            <div class="Image-padding">
-                <img class="Image-block" src="resources/gourmetRace2.png" alt="Gourmet Race image logo">
-            </div>
-        </div>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-dark bg-dark" style="height: 50px">
+            <a class="navbar-brand" style="cursor: not-allowed;">
+                <img src="resources/user.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Iniciar sesión o registrarse
+            </a>
 
-        <div class="Circles-user">
+            <form class="form-inline">
+                <a class="navbar-brand">¿Quieres saber donde está tu pedido?</a>
+                <input class="form-control mr-sm-2" type="search" placeholder="Introduce el código aquí..." pattern="^[a-zA-Zñ0-9]*$" aria-label="Search">
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </nav>
+        <!-- //Navigation bar -->
 
-            <div class="Circles">
-
-                <div class="circle-block">
-                    <div class="circle-small2"></div>
-
-                    <a class="btn-a" href="pedidos.html" style="text-decoration:none">
-                        <button class="circle2" name="btn_pedidos"
-                            onmouseover="this.style.background='rgb(255, 255, 235)'"
-                            onmouseout="this.style.background='rgb(246, 246, 150)'">
-                            <p>Pedidos</p>
-                        </button>
+        <!-- Main contnent -->
+        <div class="custom-container container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="https://marcosPlaza.github.io">
+                        <img class="Image-block" src="resources/gourmetRace2.png" style="padding-left: -10px;" alt="Gourmet Race image logo">
                     </a>
-
                 </div>
-
-                <div class="circle-block">
-                    <div class="circle-small"></div>
-
-                    <button class="circle" style="cursor: not-allowed;" name="btn_reservas" onmouseover="this.style.background='rgb(224, 224, 224)'"
-                        onmouseout="this.style.background='rgb(206, 206, 201)'">
-                        <p>Reservas</p>
-                    </button>
-
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="margin"></div>
+                    <h2>¡Pide lo que te pida el cuerpo!</h2>
+                    <p>¡Disfruta de la mejor comida online a domicilio, y planifica tus comidas para llevar un estilo de vida saludable!</p>
                 </div>
-
+            </div>
+            <div class="margin"></div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="#" class="action-button shadow animate red" style="text-decoration: none;">Pide ya!</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" class="action-button shadow animate gray" style="text-decoration: none; cursor: not-allowed;" disabled>Reserva ya!</a>
+                </div>
             </div>
 
-            <div class="user-block">
+        </div>
+        <!-- //Main contnent -->
 
-                <div class="user-block-image">
-                    <div class="user-image">
-                        <p>Cuenta</p>
+        <!-- Footer -->
+        <div class="bottom-block bg-dark">
+                <div class="margin"></div>
+
+                <div class="flex-bottom">
+
+                    <div class="mobile-block">
+                        <h1>Descárgate nuestra app en tu tienda favorita</h1>
+                        <img type="submit" src="resources/apple.svg" alt="Apple Store">
+                        <img type="submit" src="resources/google.png" alt="Google Play">
+                     </div>
+
+                    <div class="info-block">
+                        <h1>Acerca de Gourmet Race</h1>
+                        <h2>Ayuda</h2>
+                        <h2>Precios</h2>
+                        <h2>Preguntas Frecuentes</h2>
+                        <h2>Política de cookies</h2>
+                        <h2>Política de privacidad</h2>
                     </div>
+
+                    <div class="info-block">
+                        <h1>Trabaja con nosotros</h1>
+                        <h2>Trabaja como repartidor</h2>
+                        <h2>Registra tu restaurante</h2>
+                        <h2>Gestionar restaurante</h2>
+                        <h2>Crear cuenta de empresa</h2>
+                        <h2>Términos y condiciones</h2>
+                    </div>
+
                 </div>
 
-                <div>
-                    <button class="button-login" name="button" type="submit">Iniciar Sesión</button>
-                </div>
-
-
-                <div class="user-register">
-                    <p type="submit">¿Aún no tienes cuenta? Regístrate aquí</p>
-                </div>
-
+                <div class="margin"></div>
             </div>
-        </div>
-
-        <div class="form-group">
-
-            <div class="margin"></div>
-
-            <label class="hlabel" for="restaurant">Busca restaurantes cerca de ti</label>
-
-            <div class="search-block">
-
-                <div class="search">
-                    <input type="text" name="restaurant" pattern="^[a-zA-Zñ]*$"
-                        title="Argumentos inválidos. No se permiten carácteres distintos a letras ni espacios."
-                        class="form-control" id="restaurant" placeholder="¿Qué te apetece?">
-                </div>
-
-                <div>
-                    <button class="button-send" name="button" type="submit">Buscar</button>
-                </div>
-
-            </div>
+            <!-- //Footer -->
 
         </div>
-
-        <div class="bottom-block">
-
-            <div class="margin"></div>
-
-            <div class="flex-bottom">
-
-                <div class="mobile-block">
-                    <h1>Descárgate nuestra app en tu tienda favorita</h1>
-                    <img type="submit" src="resources/apple.svg" alt="Apple Store">
-                    <img type="submit" src="resources/google.png" alt="Google Play">
-                </div>
-
-                <div class="info-block">
-                    <h1>Acerca de Gourmet Race</h1>
-                    <h2>Ayuda</h2>
-                    <h2>Precios</h2>
-                    <h2>Preguntas Frecuentes</h2>
-                    <h2>Política de cookies</h2>
-                    <h2>Política de privacidad</h2>
-                </div>
-
-                <div class="info-block">
-                    <h1>Trabaja con nosotros</h1>
-                    <h2>Trabaja como repartidor</h2>
-                    <h2>Registra tu restaurante</h2>
-                    <h2>Gestionar restaurante</h2>
-                    <h2>Crear cuenta de empresa</h2>
-                    <h2>Términos y condiciones</h2>
-                </div>
-
-            </div>
-
-            <div class="margin"></div>
-
-        </div>
-
-    </div>
-
+        <!-- //Background -->
 </body>
 
 </html>

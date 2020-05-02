@@ -1,3 +1,26 @@
+
+.container-fluid.custom-container {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.Background
+{
+    width: auto;
+    height: 800px;
+    background-color: transparent;
+    background-image: url(resources/back1.png);
+}
+
+.navbar-brand
+{
+  font-family: 'Lato', sans-serif;
+  color:grey;
+  font-size: 16px;
+}
+
+
 .imgbox {
     display: grid;
     height: 100%;
@@ -9,13 +32,7 @@
     margin: auto;
 }
 
-.Background
-{
-    width: auto;
-    height: 600px;
-    background-color: transparent;
-    background-image: url(resources/portada3.jpg);
-}
+
 
 .Image
 {
@@ -33,8 +50,13 @@
 
 .Image-block
 {
-    margin-top: -100px;
+    margin-top: -60px;
+    margin-left: -35px; 
     width: auto;
+}
+
+.Image-block2 {
+    margin-top: -60px;
 }
 
 .Circles-user
@@ -126,7 +148,8 @@
 .user-register p
 {
     margin-top: 3%;
-    color: white;
+    margin-right: 10%: 
+    color: lightblue;
     text-decoration: underline;
 }
 
@@ -192,10 +215,24 @@
     font: bold 200% "Trebuchet MS", sans-serif;
 }
 
+.bottom-block-transparent
+{
+    margin-top: 5%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
 .bottom-block
 {
-    background-color: black;
     margin-top: 5%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
 }
 
 .margin
@@ -235,4 +272,43 @@
 .info-block h2
 {
     font-size: 16px;
+}
+
+.animate
+{
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+    width: 230px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    margin: 10px 20px 20px 10px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Verdana';
+    font-size: 25px;
+    color: #FFF;
+}
+
+.red
+{
+    background-color: #E74C3C;
+    border-bottom: 5px solid #BD3E31;
+}
+
+.gray {
+    background-color: #808080;
+    border-bottom: 5px solid #606060;
+}
+
+.action-button:active
+{
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
 }
