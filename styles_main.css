@@ -61,7 +61,7 @@
 .bottom-block
 {
     margin-top: 5%;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
