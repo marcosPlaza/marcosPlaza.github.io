@@ -36,15 +36,17 @@
 <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
 
 
-
 <!-- Font Awesome Icon Library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <head>
     <link href="styles_restuarantes.css" rel="stylesheet" type="text/css" />
     <title>Pide tu comida favorita online | gourmet-race.com</title>
     <meta name="description" content="Hambriento? Busca tus restaurantes favoritos">
     <meta name="keywords" content="restaurantes,restaurants,restaurant,comida,food,hambre,precios,barato">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -79,6 +81,44 @@
 
     </div>
 
+    <div class="Flex">
+
+        <button onclick="filtros();" class="text-filter" id="btn_filtros">Mostrar filtros</button>
+        <div class="slidecontainer" style="display: flex;" id="distance">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <p class="text" style="color: black; font-weight: normal; margin-left: 15px;">Distancia:
+                <span id="distancia"></span>
+
+                <p class="text" style="color: black; font-weight: normal; margin-left: 5px;">m</p>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="Flex" style="margin-bottom: -50px;">
+
+        <label class="container" style="margin-left: 130px; margin-right: 0px;" id="checkbox">
+            <p class="text" style="color: black; font-weight: normal; margin-top: 5px;">Sin gastos de envío</p>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container" style="margin-left: 0px; margin-right: 0px; padding-left: 0px;" id="checkbox_gratis">
+            <p class="text" style="color: black; font-weight: normal; margin-top: 5px;">Bebida gratis</p>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container" style="margin-left: 0px; " id="checkbox_nse">
+            <p class="text" style="color: black; font-weight: normal; margin-top: 5px;">No se me ocurre nada más jajs
+            </p>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+    </div>
+
+
     <div class="restaurant_block">
 
         <div class="Flex">
@@ -104,6 +144,13 @@
                     </div>
 
                     <div class="restaurant-name">PIZZERIA NAPOLI</div>
+
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>0.8 km, 15-20 min</p>
+                        </div>
+                    </div>
 
                     <div class="Flex">
 
@@ -149,6 +196,13 @@
 
                     <div class="restaurant-name">TGB BURGUER</div>
 
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>1.7 km, 30-40 min</p>
+                        </div>
+                    </div>
+
                     <div class="Flex">
 
                         <div class="delete-margin">
@@ -191,6 +245,13 @@
                     </div>
 
                     <div class="restaurant-name">KEBAB DONNER</div>
+
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>1.3 km, 20-25 min</p>
+                        </div>
+                    </div>
 
                     <div class="Flex">
 
@@ -253,6 +314,13 @@
 
                     <div class="restaurant-name">TAPAS EMILIO</div>
 
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>2.0 km, 30-40 min</p>
+                        </div>
+                    </div>
+
                     <div class="Flex">
 
                         <div class="delete-margin">
@@ -295,6 +363,13 @@
 
                     <div class="restaurant-name">RESTAURANTE DRAGON</div>
 
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>1.8 km, 40-50 min</p>
+                        </div>
+                    </div>
+
                     <div class="Flex">
 
                         <div class="delete-margin">
@@ -336,6 +411,13 @@
                     </div>
 
                     <div class="restaurant-name">KEBAB RAVAL</div>
+
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>0.3 km, 10-15 min</p>
+                        </div>
+                    </div>
 
                     <div class="Flex">
 
@@ -403,6 +485,13 @@
 
                     <div class="restaurant-name">MESON ESTEBAN</div>
 
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>2.3 km, 60 min</p>
+                        </div>
+                    </div>
+
                     <div class="Flex">
 
                         <div class="delete-margin">
@@ -445,6 +534,13 @@
 
                     <div class="restaurant-name">RESTAURANTE FALLAS</div>
 
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>1.3 km, 30-45 min</p>
+                        </div>
+                    </div>
+
                     <div class="Flex">
 
                         <div class="delete-margin">
@@ -486,6 +582,13 @@
                     </div>
 
                     <div class="restaurant-name">O CANDIL</div>
+
+                    <div class="text-description">
+                        <div class="Flex" style="margin-left: 120px;">
+                            <i class="material-icons">room</i>
+                            <p>2.2 km, 20-30 min</p>
+                        </div>
+                    </div>
 
                     <div class="Flex">
 
@@ -576,6 +679,19 @@
         </div>
     </div>
 
+    <div class="Flex">
+        <div class="text" style="color: black; margin-left: 90px; margin-top: 10px; margin-right: 10px;">Ordenar por:
+        </div>
+        <select class="custom-select" style="width:230px;">
+            <option class="select-selected" value="1">Relevantes</option>
+            <option class="select-selected" value="2">Más populares</option>
+            <option class="select-selected" value="3">Distancia</option>
+            <option class="select-selected" value="4">Valoración</option>
+            <option class="select-selected" value="6">Restaurantes Nuevos</option>
+        </select>
+    </div>
+
+
     <div class="notFlex">
         <ul class="Flex">
 
@@ -587,6 +703,13 @@
                 </div>
 
                 <div class="restaurant-name">RESTAURANTE KIOTO</div>
+
+                <div class="text-description">
+                    <div class="Flex" style="margin-left: 120px;">
+                        <i class="material-icons">room</i>
+                        <p>0.8 km, 15-20 min</p>
+                    </div>
+                </div>
 
                 <div class="Flex">
 
@@ -630,6 +753,13 @@
 
                 <div class="restaurant-name">LA ARISTA</div>
 
+                <div class="text-description">
+                    <div class="Flex" style="margin-left: 120px;">
+                        <i class="material-icons">room</i>
+                        <p>0.8 km, 15-20 min</p>
+                    </div>
+                </div>
+
                 <div class="Flex">
 
                     <div class="delete-margin">
@@ -671,6 +801,13 @@
                 </div>
 
                 <div class="restaurant-name">BAR MUNICH</div>
+
+                <div class="text-description">
+                    <div class="Flex" style="margin-left: 120px;">
+                        <i class="material-icons">room</i>
+                        <p>0.8 km, 15-20 min</p>
+                    </div>
+                </div>
 
                 <div class="Flex">
 
@@ -721,6 +858,13 @@
 
                 <div class="restaurant-name">KAORI</div>
 
+                <div class="text-description">
+                    <div class="Flex" style="margin-left: 120px;">
+                        <i class="material-icons">room</i>
+                        <p>0.8 km, 15-20 min</p>
+                    </div>
+                </div>
+
                 <div class="Flex">
 
                     <div class="delete-margin">
@@ -763,6 +907,13 @@
 
                 <div class="restaurant-name">LE PETIT CUSINE</div>
 
+                <div class="text-description">
+                    <div class="Flex" style="margin-left: 120px;">
+                        <i class="material-icons">room</i>
+                        <p>0.8 km, 15-20 min</p>
+                    </div>
+                </div>
+
                 <div class="Flex">
 
                     <div class="delete-margin">
@@ -804,6 +955,13 @@
                 </div>
 
                 <div class="restaurant-name">RESTAURANTE ATENAS</div>
+
+                <div class="text-description">
+                    <div class="Flex" style="margin-left: 120px;">
+                        <i class="material-icons">room</i>
+                        <p>0.8 km, 15-20 min</p>
+                    </div>
+                </div>
 
                 <div class="Flex">
 
@@ -969,7 +1127,7 @@
 
     <script>
         // When the user scrolls the page, execute myFunction
-        window.onscroll = function () { myFunction() };
+        window.onscroll = function () { fixHeader() };
 
         // Get the header
         var header = $("myHeader");
@@ -978,13 +1136,122 @@
         var sticky = header.offsetTop;
 
         // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
+        function fixHeader() {
             if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
             } else {
                 header.classList.remove("sticky");
             }
         }
+    </script>
+
+    <script>
+        var btn_filtros = $("btn_filtros");
+        var dist = $("distance");
+        var checkbox = $("checkbox");
+        var checkbox2 = $("checkbox_gratis");
+        var checkbox3 = $("checkbox_nse");
+
+        dist.style.display = "none";
+        checkbox.style.display = "none";
+        checkbox2.style.display = "none";
+        checkbox3.style.display = "none";
+        var opt = 0;
+
+        function filtros() {
+            if (opt == 0) {
+                btn_filtros.innerHTML = "Ocultar filtros";
+                dist.style.display = "flex";
+                checkbox.style.display = "block";
+                checkbox2.style.display = "block";
+                checkbox3.style.display = "block";
+                opt = 1;
+            } else {
+                btn_filtros.innerHTML = "Mostrar filtros";
+                dist.style.display = "none";
+                checkbox.style.display = "none";
+                checkbox2.style.display = "none";
+                checkbox3.style.display = "none";
+                opt = 0;
+            }
+
+        }
+    </script>
+
+    <script>
+        var slider = $("myRange");
+        var output = $("distancia");
+        output.innerHTML = slider.value * 100;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value * 100;
+        }
+    </script>
+
+    <script>
+        var x, i, j, selElmnt, a, b, c;
+        x = document.getElementsByClassName("custom-select");
+
+        for (i = 0; i < x.length; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            /*Por cada elemento, creamos un nuevo DIV que actuará como elemento seleccionado*/
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < selElmnt.length; j++) {
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+                    /*Cuando un elemento es clicado, actualizamos el input con el item seleccionado*/
+                    var y, i, k, s, h;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < s.length; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            for (k = 0; k < y.length; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+                /*Cuando la cajita esta clicado, cerrar cualquier otra cajita, y abrir/cerrar la actual*/
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+            var x, y, i, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            for (i = 0; i < y.length; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < x.length; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
+        document.addEventListener("click", closeAllSelect);
     </script>
 
 </body>
