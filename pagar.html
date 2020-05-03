@@ -54,38 +54,58 @@
 
 <body>
 
-    <!-- Header -->
-    <div class="Flex" style="background-color: black;" id="myHeader" style="position: absolute; z-index: 10;">
+<!-- Navigation bar -->
+    <nav class="navbar navbar-dark" style="height: 70px; background-color: black;">
+        <a class="navbar-brand" style="cursor: not-allowed;">
+            <img src="resources/user.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Iniciar sesión o registrarse
+        </a>
+        
+        <img src="resources/gourmetRace2_small.png" class="d-inline-block align-top" style="padding-top: 35px; padding-left: 150px;" alt="" data-toggle="modal" data-target="#exampleModal">
+        
+        <form class="form-inline">
+            <a class="navbar-brand">¿Necesitas ayuda?</a>
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." pattern="^[a-zA-Zñ0-9]*$" aria-label="Search">
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    </nav>
+    <!-- //Navigation bar -->
 
-        <div class="Image">
-            <div class="Image-padding">
-                <img class="Image-block" src="resources/gourmetRace2_small.png" alt="Gourmet Race image logo">
-            </div>
-        </div>
-
-        <div class="Flex" type="button">
-            <div onclick="search();" id="search_img" style="margin-right: 5px; margin-top: 15px;">
-                <img class="Search-box" src="resources/search.png">
-            </div>
-            <div onclick="search();">
-                <div class="text" id="search_text" style="margin-top: 20px;">Buscar</div>
-            </div>
-            <div style="margin-top: 20px;">
-                <input class="input-text" id="input_search">
-            </div>
-
-        </div>
-
-        <div class="space"></div>
-
-
-        <div class="text" type="button" style="cursor: not-allowed; margin-top: 20px;">
-            Iniciar Sesión
-        </div>
-
+    <!-- Progress Bar -->
+    <div class="progress" style="border-radius: 0%; height: 30px;">
+        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%; border-radius: 0%;">PASO 3 Confirma tu pedido y disfruta de tu comida!</div>
     </div>
+    <!-- //Progress Bar -->
 
-    <!-- FIN Header -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Gracias por la compra!</h5>
+                    
+                </div>
+                <div class="modal-body">
+                    <label>
+                        Desde gourmet race esperamos que el servicio haya estado a su gusto. Nos gustaría mucho volverle a ver.
+                    El código alfanumerico que se muestra a continuación, le servirá para acceder a futuros descuentos asi como para el seguimiento de su pedido. Le recomendamos encarecidamente que lo guarde.
+                    </label>
+                    <label>
+                        Su código es el siguiente: <h3>W12NIONS348990</h3>
+                    </label>
+                    <label>
+                        ¡Gracias de nuevo y hasta la próxima!
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://marcosPlaza.github.io">
+                        <button type="button" class="btn btn-danger">Continuar</button>
+                    </a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Modal -->
 
     <div class="Flex">
 
