@@ -62,7 +62,7 @@ body {
 {
     margin-left: 10%;
     margin-top: 5%;
-    font: bold 200% "Trebuchet MS", sans-serif;
+    font: bold 200% "Verdana", sans-serif;
 }
 
 .bottom-block
@@ -92,7 +92,7 @@ body {
 .mobile-block h1
 {
     color: white;
-    font: bold 100% "Trebuchet MS", sans-serif;
+    font: bold 100% "Verdana", sans-serif;
     margin-bottom: 5%;
 }
 
