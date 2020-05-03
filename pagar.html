@@ -36,246 +36,175 @@
 <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
 
 
-
 <!-- Font Awesome Icon Library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/regular.min.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/solid.min.css">
+
 
 <head>
-    <link href="styles_pagar.css" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/core.css">
+    <link href="styles_pedido.css" rel="stylesheet" type="text/css" />
     <title>Pide tu comida favorita online | gourmet-race.com</title>
     <meta name="description" content="Hambriento? Busca tus restaurantes favoritos">
     <meta name="keywords" content="restaurantes,restaurants,restaurant,comida,food,hambre,precios,barato">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="Background">
-        <div class="Flex" style="background-color: black;" id="myHeader" style="position: absolute; z-index: 10;">
+    <!-- Header -->
+    <div class="Flex" style="background-color: black;" id="myHeader" style="position: absolute; z-index: 10;">
 
-            <div class="Image">
-                <div class="Image-padding">
-                    <img class="Image-block" src="resources/gourmetRace2_small.png" alt="Gourmet Race image logo">
-                </div>
+        <div class="Image">
+            <div class="Image-padding">
+                <img class="Image-block" src="resources/gourmetRace2_small.png" alt="Gourmet Race image logo">
             </div>
+        </div>
 
-            <div class="Flex" type="button" style="margin-top: -10px;">
-                <div onclick="search();" id="search_img" style="margin-right: 5px; margin-left:5px;">
-                    <img class="Search-box" src="resources/search.png" style="margin-top: -5px;">
-                </div>
-                <div onclick="search();" class="delete-margin">
-                    <div class="text" id="search_text">Buscar</div>
-                </div>
-                <div class="delete-margin">
-                    <input class="input-text" id="input_search" style="margin-top: -5px;">
-                </div>
-
+        <div class="Flex" type="button">
+            <div onclick="search();" id="search_img" style="margin-right: 5px; margin-top: 15px;">
+                <img class="Search-box" src="resources/search.png">
             </div>
-
-            <div class="space"></div>
-
-            <div class="text" type="button" style="cursor: not-allowed;">
-                Iniciar Sesión
+            <div onclick="search();">
+                <div class="text" id="search_text" style="margin-top: 20px;">Buscar</div>
+            </div>
+            <div style="margin-top: 20px;">
+                <input class="input-text" id="input_search">
             </div>
 
         </div>
 
+        <div class="space"></div>
 
 
-
-
-        <div class="contender">
-            <ul class="Flex">
-
-                <!--------------------------------------------BLOQUE 1------------------------->
-
-                <li class="notFlex">
-                    <div class="box-blue">
-                        <div class="text_box">Detalles de la entrega</div>
-                        <hr width=300>
-                        <div class="text_table">Carrer de Santa Fe de Nou Mèxic, 13, esc B 2º 2º</div>
-                        <div class="text_table">08017, Barcelona</div>
-
-                        <hr width=300>
-                        <div class="text_table">Pablo Garcia González</div>
-                        <div class="text_table">675855782</div>
-                        <div class="text_table">PabloGG@gmail.com</div>
-
-                    </div>
-                    <div class="box-pay">
-
-                        <div style="margin-top: 2%;">
-                            <div class="text" style="color: black;">Selecciona tu método de pago</div>
-                            <div style="margin-top: 15px;">
-
-                                <span style="color: black;" class="fa-stack fa-lg">
-                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                    <i class="fa fa-cc-paypal fa-stack-1x"></i>
-                                </span>
-
-                                <span style="color: black;" class="fa-stack fa-lg">
-                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                    <i class="fa fa-cc-visa fa-stack-1x"></i>
-                                </span>
-
-                                <span style="color: black;" class="fa-stack fa-lg">
-                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                    <i class="fa fa-cc-mastercard fa-stack-1x"></i>
-                                </span>
-
-                                <span style="color: black;" class="fa-stack fa-lg">
-                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                    <i class="fa fa-cc-discover fa-stack-1x"></i>
-                                </span>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-
-                <div class="space"></div>
-
-                <div class="space"></div>
-                <!--------------------------------------------BLOQUE 2------------------------->
-
-                <li class="notFlex">
-
-
-                    <div class="box-bag">
-                        <div class="text_box">Mi bolsa</div>
-                        <hr width=300>
-                        <div class="food-info">
-                            <img class="Image-restaurant" src="resources/pizzeria1.jpg">
-                            <div class="text_preu_items">X €</div>
-                        </div>
-                        <hr width=300>
-                        <div class="food-info">
-                            <img class="Image-restaurant" src="resources/pizzeria1.jpg">
-                            <div class="text_preu_items">X €</div>
-                        </div>
-
-                        <hr width=300>
-                        <div class="contender">
-                            <div class="bxslider" id="slider">
-                                <div class="text_total">Subtotal:</div>
-                                <div class="text_envio">X €</div>
-                            </div>
-                        </div>
-                        <div class="contender">
-                            <div class="bxslider" id="slider">
-                                <div class="text_no_bold">Envio:</div>
-                                <div class="text_preu">X €</div>
-                            </div>
-                        </div>
-
-                        <hr width=300>
-                        <div class="contender">
-                            <div class="bxslider" id="slider">
-                                <div class="text_bold">Total: </div>
-                                <div class="text_bag" font="bold">X €</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <!--------------------------------------------------------------->
-
-            </ul>
+        <div class="text" type="button" style="cursor: not-allowed; margin-top: 20px;">
+            Iniciar Sesión
         </div>
 
-        <div><button class="button-confirmar" name="button" type="submit">Confirmar pedido</button></div>
-
-
-        <div class="bottom-block">
-
-            <div class="restaurant_block"></div>
-
-            <div class="Flex" style="padding-top: 0px;">
-
-                <div class="mobile-block">
-                    <h1>Descárgate nuestra app en tu tienda favorita</h1>
-                    <img type="submit" src="resources/apple.svg" alt="Apple Store">
-                    <img type="submit" src="resources/google.png" alt="Google Play">
-                </div>
-
-                <div style="margin-left: 200px;"></div>
-
-                <div style="margin-top: 2%;">
-                    <div class="text" style="color: white;">Formas de pago</div>
-                    <div style="margin-top: 15px;">
-
-                        <span style="color: white;" class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-cc-paypal fa-stack-1x"></i>
-                        </span>
-
-                        <span style="color: white;" class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-cc-visa fa-stack-1x"></i>
-                        </span>
-
-                        <span style="color: white;" class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-cc-mastercard fa-stack-1x"></i>
-                        </span>
-
-                        <span style="color: white;" class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-cc-discover fa-stack-1x"></i>
-                        </span>
-
-                    </div>
-                </div>
-
-                <div style="margin-left: 200px;"></div>
-
-                <div style="margin-top: 2%;">
-                    <div class="text" style="color: white;">Síguenos en</div>
-                    <div style="margin-top: 15px;">
-                        <span style="color: white;" class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x"></i>
-                        </span>
-
-                        <span style="color: white;" class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-instagram fa-stack-1x"></i>
-                        </span>
-
-                        <span style="color: white;" class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-facebook fa-stack-1x"></i>
-                        </span>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
 
-    <script>
-        var view = $("slider");
-        var move = "100px";
-        var sliderLimit = -750;
+    <!-- FIN Header -->
 
-        function rightButton() {
+    <div class="Flex">
 
-            var currentPosition = parseInt(view.css("left"));
-            view.stop(false, true).animate({ left: "-=" + move }, { duration: 400 })
+        <div style="display: block;">
+            <!-- Detalles de la entrega -->
+            <div class="contenedor-detalles" style="width: 65%;">
+                <h1 style="margin-bottom: 30px;">Detalles de la entrega</h1>
+                <div class="Flex">
+                    <p class="text" style="color: black;">Calle:</p>
+                    <p class="text" style="color: black; font-weight: normal;">&nbsp Carrer de Santa Fe de Nou Mèxic,
+                        13,
+                        esc B 2º 2º</p>
+                </div>
+                <div class="Flex">
+                    <p class="text" style="color: black;">Código postal:</p>
+                    <p class="text" style="color: black; font-weight: normal;">&nbsp 08017, Barcelona</p>
+                </div>
+                <div class="Flex">
+                    <p class="text" style="color: black;">Nombre y apellidos:</p>
+                    <p class="text" style="color: black; font-weight: normal;">&nbsp Pablo Garcia González</p>
+                </div>
+                <div class="Flex">
+                    <p class="text" style="color: black;">Teléfono:</p>
+                    <p class="text" style="color: black; font-weight: normal;">&nbsp 675855782</p>
+                </div>
+                <div class="Flex">
+                    <p class="text" style="color: black;">Correo electrónico:</p>
+                    <p class="text" style="color: black; font-weight: normal;">&nbsp PabloGG@gmail.com</p>
+                </div>
+                <div class="Flex">
+                    <p class="text" style="color: black;">Total a pagar:</p>
+                    <p class="text" style="color: black; font-weight: normal;">&nbsp 17.46€</p>
+                </div>
+            </div>
 
-        };
+            <!-- FIN Detalles de la entrega -->
 
-        function leftButton() {
+            <!-- Seleccionar metodo de pago -->
 
-            var currentPosition = parseInt(view.css("left"));
-            view.stop(false, true).animate({ left: "+=" + move }, { duration: 400 });
+            <div class="contenedor-detalles" style="width: 120%;">
+                <h1 style="margin-bottom: 30px;">Selecciona tu metodo de pago</h1>
 
-        };
-    </script>
+                <span style="color: black;" class="big-icon" id="paypal">
+                    <i onclick="selectPaypal();" class="fa fa-cc-paypal" type="button" style="margin-left: 20px;"></i>
+                </span>
+
+                <span style="color: black;" class="big-icon" id="visa">
+                    <i onclick="selectVisa();" class="fa fa-cc-visa" type="button" style="margin-left: 20px;"></i>
+                </span>
+
+                <span style="color: black;" class="big-icon" id="mastercard">
+                    <i onclick="selectMastercard();" class="fa fa-cc-mastercard" type="button"
+                        style="margin-left: 20px;"></i>
+                </span>
+
+                <span style="color: black;" class="big-icon" id="discover">
+                    <i onclick="selectDiscover();" class="fa fa-cc-discover" type="button"
+                        style="margin-left: 20px; margin-right: 20px;"></i>
+                </span>
+            </div>
+
+            <!-- FIN Seleccionar metodo de pago -->
+
+        </div>
+
+
+        <!-- Artículos -->
+
+        <div class="contenedor-detalles" style="width: 35%;">
+            <h1 style="margin-bottom: 30px;">Artículos (5)</h1>
+            <div class="Flex">
+                <p class="text" style="color: black;">Pizza hawaiana x1</p>
+                <p class="right">7.50€</p>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input class="comentarios" placeholder="Envía tu comentario al restaurante...">
+            </div>
+            <div class="Flex">
+                <p class="text" style="color: black;">Hamburguesa Big Mac x1</p>
+                <p class="right">4.00€</p>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input class="comentarios" placeholder="Envía tu comentario al restaurante...">
+            </div>
+            <div class="Flex">
+                <p class="text" style="color: black;">Patatas Fritas x2</p>
+                <p class="right">3.98€</p>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input class="comentarios" placeholder="Envía tu comentario al restaurante...">
+            </div>
+            <div class="Flex">
+                <p class="text" style="color: black;">Cocacola x1</p>
+                <p class="right">0.99€</p>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input class="comentarios" placeholder="Envía tu comentario al restaurante...">
+            </div>
+            <div class="Flex">
+                <p class="text" style="color: black;">Fanta x1</p>
+                <p class="right">0.99€</p>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input class="comentarios" placeholder="Envía tu comentario al restaurante...">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contenedor-boton">
+        <a class="action-button shadow animate red" style="text-decoration: none;" data-toggle="modal"
+            data-target="#exampleModal">
+            <label style="color: white">Pagar</label>
+        </a>
+    </div>
+
+
+    <!-- Javascript -->
+
     <script>
         var input = $("input_search");
         var text = $("search_text");
@@ -308,7 +237,7 @@
 
     <script>
         // When the user scrolls the page, execute myFunction
-        window.onscroll = function () { myFunction() };
+        window.onscroll = function () { fixHeader() };
 
         // Get the header
         var header = $("myHeader");
@@ -317,7 +246,7 @@
         var sticky = header.offsetTop;
 
         // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
+        function fixHeader() {
             if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
             } else {
@@ -326,6 +255,101 @@
         }
     </script>
 
-</body>
+    <script>
+        var paypal = $("paypal");
+        var visa = $("visa");
+        var mastercard = $("mastercard");
+        var discover = $("discover");
 
-</html>
+        option = 0;
+
+        function selectPaypal() {
+            if (option == 1) {
+                paypal.style.borderColor = "white";
+            }
+            if (option == 2) {
+                visa.style.borderColor = "white";
+                option = 0;
+            }
+            else if (option == 3) {
+                mastercard.style.borderColor = "white";
+                option = 0;
+            }
+            else if (option == 4) {
+                discover.style.borderColor = "white";
+                option = 0;
+            }
+            if (option == 0) {
+                paypal.style.borderColor = "orangered";
+                option = 1;
+            }
+        }
+
+        function selectVisa() {
+            if (option == 1) {
+                paypal.style.borderColor = "white";
+                option = 0;
+            }
+            if (option == 2) {
+                visa.style.borderColor = "white";
+            }
+            else if (option == 3) {
+                mastercard.style.borderColor = "white";
+                option = 0;
+            }
+            else if (option == 4) {
+                discover.style.borderColor = "white";
+                option = 0;
+            }
+            if (option == 0) {
+                visa.style.borderColor = "orangered";
+                option = 2;
+            }
+        }
+
+        function selectMastercard() {
+            if (option == 1) {
+                paypal.style.borderColor = "white";
+                option = 0;
+            }
+            if (option == 2) {
+                visa.style.borderColor = "white";
+                option = 0;
+            }
+            else if (option == 3) {
+                mastercard.style.borderColor = "white";
+            }
+            else if (option == 4) {
+                discover.style.borderColor = "white";
+                option = 0;
+            }
+            if (option == 0) {
+                mastercard.style.borderColor = "orangered";
+                option = 3;
+            }
+        }
+
+        function selectDiscover() {
+            if (option == 1) {
+                paypal.style.borderColor = "white";
+                option = 0;
+            }
+            if (option == 2) {
+                visa.style.borderColor = "white";
+                option = 0;
+            }
+            else if (option == 3) {
+                mastercard.style.borderColor = "white";
+                option = 0;
+            }
+            else if (option == 4) {
+                discover.style.borderColor = "white";
+            }
+            if (option == 0) {
+                discover.style.borderColor = "orangered";
+                option = 4;
+            }
+        }
+    </script>
+
+</body>
