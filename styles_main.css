@@ -68,7 +68,6 @@ body {
 .bottom-block
 {
     margin-top: 5%;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -77,7 +76,7 @@ body {
 
 .margin
 {
-    height: 30px;
+    line-height: 30px;
 }
 
 .flex-bottom
