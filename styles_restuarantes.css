@@ -68,7 +68,7 @@ body {
 .Image-restaurant {
     height: 200px;
     width: 300px;
-    border-radius: 5%;
+    border-radius: 0%;
     background-color: transparent;
     z-index: -1;
 }
@@ -549,7 +549,7 @@ body {
 
 .margin
 {
-    height: 30px;
+    height: 5px;
 }
 
 .flex-bottom
