@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <link href="styles_restuarantes.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/core.css">
+    <title>Pide tu comida favorita online | Gourmet Race</title>
+    <meta name="description" content="Hambriento? Busca tus restaurantes favoritos">
+    <meta name="keywords" content="restaurantes,restaurants,restaurant,comida,food,hambre,precios,barato">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<script type="text/javascript">
+   function back() { window.history.go(-1); }
+</script>
+<body>
+	<!-- Navigation bar -->
+    <nav class="navbar navbar-dark" style="height: 70px; background-color: black;">
+        <a class="navbar-brand" style="cursor: not-allowed;">
+            <img src="resources/user.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Iniciar sesión o registrarse
+        </a>
+        
+        <img src="resources/gourmetRace2_small.png" class="d-inline-block align-top" style="padding-top: 35px; padding-left: 150px;" alt="" data-toggle="modal" data-target="#exampleModal">
+        
+        <form class="form-inline">
+            <a class="navbar-brand">¿Necesitas ayuda?</a>
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." pattern="^[a-zA-Zñ0-9]*$" aria-label="Search">
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    </nav>
+    <!-- //Navigation bar -->
+
+    <!-- Progress Bar -->
+    <div class="progress" style="border-radius: 0%; height: 30px;">
+        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 66%; border-radius: 0%;">PASO 2 Escoge el plato que más te apetezca</div>
+    </div>
+    <!-- //Progress Bar -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Atención</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Va a abandonar el proceso de compra.
+                    ¿Esta de acuerdo?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <a href="https://marcosPlaza.github.io">
+                        <button type="button" class="btn btn-danger">Continuar</button>
+                    </a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Modal -->
+
+    <!-- Main wrapper -->
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 40px;">
+            <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.75)">
+                <h1>Carta de la pizzería "La Piccola"</h1>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <img src="resources/5star.png" width="100%" height="100%" class="d-inline-block align-top" alt=""> 
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="row" style="padding-top: 5px;">
+                            <img src="resources/euro.png" width="15%" height="15%" class="d-inline-block align-top" alt="">
+                            <img src="resources/euro.png" width="15%" height="15%" class="d-inline-block align-top" alt="">     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <!-- Filters -->
+                <div class="container-fluid" style="padding-top: 90px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Filtros</h5>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="resources/filters.png" width="15" height="20" style="padding-top: 5px;" class="d-inline-block align-top" alt="">  
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                        <button type="button" class="btn btn-danger" onpressed=""data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">Ofertas especiales</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 5px">
+                        <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">Gastos de entrega gratis</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 5px">
+                        <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">Para carnívoros</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 5px">
+                        <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">Vegetarianos</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 5px">
+                        <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">Amantes del queso</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Filters -->
+            </div>
+            <div class="col-sm-8">
+                <div class="overflow-auto" style="height: 632px; width: 100%;">
+                    <div class="container-fluid" style="padding-top: 50px; background-color: transparent;">
+                        <div class="row" style="background-color: rgba(255, 255, 255, 0.75);">
+                                <img src="resources/4quesos.jpg" width="250" height="150">
+                                    <h5 style="padding-top: 10px; padding-left: 10px;">Pizza 4 quesos</h5>
+                                    <p style="padding-left: 10px; padding-top: 10px;">Ingredientes: Harina, Aceite, Agua, Sal, Levadura, Tomate casero, Óregano, Mozzarella, Gorgonzola, Parmesano, Cheddar</p>
+                                </img>
+                                <button type="button" class="btn btn-danger" style="width: 100%" style="border-radius: 0%">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid" style="padding-top: 20px; background-color: transparent;">
+                        <div class="row" style="background-color: rgba(255, 255, 255, 0.75);">
+                                <img src="resources/pizzakebab.jpg" width="250" height="150">
+                                    <h5 style="padding-top: 10px; padding-left: 10px;">Pizza kebab</h5>
+                                    <p style="padding-left: 10px; padding-top: 10px;">Ingredientes: Harina, Aceite, Agua, Sal, Levadura, Tomate casero, Óregano, Mozzarella, carne de pollo, Carne de ternera</p>
+                                </img>
+                                <button type="button" class="btn btn-danger" style="width: 100%" style="border-radius: 0%">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid" style="padding-top: 20px; background-color: transparent;">
+                        <div class="row" style="background-color: rgba(255, 255, 255, 0.75);">
+                                <img src="resources/pepperoni.jpg" width="250" height="150">
+                                    <h5 style="padding-top: 10px; padding-left: 10px;">Pizza pepperoni</h5>
+                                    <p style="padding-left: 10px; padding-top: 10px;">Ingredientes: Harina, Aceite, Agua, Sal, Levadura, Tomate casero, Óregano, Mozzarella, Pepperoni</p>
+                                </img>
+                                <button type="button" class="btn btn-danger" style="width: 100%" style="border-radius: 0%">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid" style="padding-top: 20px; background-color: transparent;">
+                        <div class="row" style="background-color: rgba(255, 255, 255, 0.75);">
+                                <img src="resources/4quesos.jpg" width="250" height="150">
+                                    <h5 style="padding-top: 10px; padding-left: 10px;">Pizza carbonara</h5>
+                                    <p style="padding-left: 10px; padding-top: 10px;">Ingredientes: Harina, Aceite, Agua, Sal, Levadura, Salsa carbonara, Óregano, Mozzarella, Bacon</p>
+                                </img>
+                                <button type="button" class="btn btn-danger" style="width: 100%" style="border-radius: 0%">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid" style="padding-top: 20px; background-color: transparent;">
+                        <div class="row" style="background-color: rgba(255, 255, 255, 0.75);">
+                                <img src="resources/4quesos.jpg" width="250" height="150">
+                                    <h5 style="padding-top: 10px; padding-left: 10px;">Pizza prosciutto</h5>
+                                    <p style="padding-left: 10px; padding-top: 10px;">Ingredientes: Harina, Aceite, Agua, Sal, Levadura, Tomate casero, Óregano, Mozzarella, Jamon cocido</p>
+                                </img>
+                                <button type="button" class="btn btn-danger"  style="width: 100%" style="border-radius: 0%">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="container-fluid" style="padding-top: 90px;">
+                    <div class="row" style="padding-left: 15px;">
+                        <div class="col-sm-3">
+                            <h5>Carrito</h5>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="resources/Carrito.png" width="15" height="20" style="padding-top: 5px;" class="d-inline-block align-top" alt="">  
+                        </div>
+                    
+                    </div>
+                    <div class="container-fluid" style="padding-left: -10px;">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-secondary" style="width: 100%">
+                                <img src="resources/pizzaIcon.png" width="20" height="30" style="padding-top: 5px; padding-left: -10px;" class="d-inline-block align-top" alt="">
+                                <label style="padding-left: 5px;">Cuatro quesos x 2</label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 1px">
+                        <button type="button" class="btn btn-secondary" style="width: 100%">
+                                <img src="resources/pizzaIcon.png" width="20" height="30" style="padding-top: 5px; padding-left: -10px;" class="d-inline-block align-top" alt="">
+                                <label style="padding-left: 5px;">Carbonara</label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 1px">
+                            <button type="button" class="btn btn-secondary" style="width: 100%">
+                                <img src="resources/pizzaIcon.png" width="20" height="30" style="padding-top: 5px; padding-left: -10px;" class="d-inline-block align-top" alt="">
+                                <label style="padding-left: 5px;">Pepperoni</label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 1px">
+                            <button type="button" class="btn btn-secondary" style="width: 100%">
+                                <img src="resources/burguerIcon.svg" width="20" height="30" style="padding-top: 5px; padding-left: -10px;" class="d-inline-block align-top" alt="">
+                                <label style="padding-left: 5px;">Completa</label>
+                            </button>                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 1px">
+                            <button type="button" class="btn btn-secondary" style="width: 100%">
+                                <img src="resources/burguerIcon.svg" width="20" height="30" style="padding-top: 5px; padding-left: -10px;" class="d-inline-block align-top" alt="">
+                                <label style="padding-left: 5px;">Oxbridge</label>
+                            </button>                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-top: 50px">
+                            <button type="button" class="btn btn-warning" style="width: 100%">
+                                Confirmar y pagar
+                            </button>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Mainwrapper -->
+
+    <!-- Footer -->
+    <div class="bottom-block" style="background-color: black;">
+        <div class="flex-bottom">
+            <div class="mobile-block">
+                <h1>Descárgate nuestra app en tu tienda favorita</h1>
+                <img type="submit" src="resources/apple.svg" alt="Apple Store">
+                <img type="submit" src="resources/google.png" alt="Google Play">
+            </div>
+            <div class="mobile-block">
+                <h1>Formas de pago</h1>
+                <span style="color: white;" class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-cc-paypal fa-stack-1x"></i>
+                </span>
+                <span style="color: white;" class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-cc-visa fa-stack-1x"></i>
+                </span>
+
+                <span style="color: white;" class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-cc-mastercard fa-stack-1x"></i>
+                </span>
+
+                <span style="color: white;" class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-cc-discover fa-stack-1x"></i>
+                </span>
+            </div>
+            <div class="mobile-block">
+                <h1>Síguenos en</h1>
+                <span style="color: white;" class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+
+                <span style="color: white;" class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x"></i>
+                </span>
+
+                <span style="color: white;" class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+            </div>
+        </div>
+        <div class="margin"></div>
+    </div>
+    <!-- //Footer -->
+
+</body>
+</html>
